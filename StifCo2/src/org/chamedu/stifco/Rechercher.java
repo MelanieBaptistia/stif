@@ -26,7 +26,6 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -137,15 +136,6 @@ public class Rechercher extends Activity implements ViewSwitcher.ViewFactory,Vie
 			this.startActivity( iResultat );
 		}
     }
-		
-	private void setDialogOnClickListener(int buttonId, final int dialogId) {
-		Button b = (Button)findViewById(buttonId);
-		b.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				showDialog(dialogId);
-			}
-		});
-	}
 	
 	public void onClick(View v) {
 		
